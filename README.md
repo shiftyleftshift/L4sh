@@ -9,7 +9,7 @@ open firewall ports
 ```ufw enable
 ufw allow <netcat port>/tcp
 ufw allow 1389/tcp
-ufw allow <http_port>
+ufw allow <http_port>/tcp
 ufw reload
 ```
 
